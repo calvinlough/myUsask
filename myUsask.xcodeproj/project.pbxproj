@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E1F36FE14B4C78B0014956D /* CLClassesViewControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E1F36FD14B4C78B0014956D /* CLClassesViewControllerCell.xib */; };
+		3E1F370614B54B9D0014956D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1F370514B54B9D0014956D /* MBProgressHUD.m */; };
+		3E57711114AE45EA000E5A6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E57711014AE45EA000E5A6F /* UIKit.framework */; };
+		3E57711314AE45EA000E5A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E57711214AE45EA000E5A6F /* Foundation.framework */; };
+		3E57711514AE45EA000E5A6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E57711414AE45EA000E5A6F /* CoreGraphics.framework */; };
+		3E57711B14AE45EA000E5A6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E57711914AE45EA000E5A6F /* InfoPlist.strings */; };
+		3E57711D14AE45EA000E5A6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E57711C14AE45EA000E5A6F /* main.m */; };
+		3E57712114AE45EA000E5A6F /* CLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E57712014AE45EA000E5A6F /* CLAppDelegate.m */; };
+		3E57712414AE45EA000E5A6F /* CLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E57712314AE45EA000E5A6F /* CLViewController.m */; };
+		3E57712714AE45EA000E5A6F /* CLLoginViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E57712514AE45EA000E5A6F /* CLLoginViewController_iPhone.xib */; };
+		3E57712A14AE45EB000E5A6F /* CLLoginViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E57712814AE45EB000E5A6F /* CLLoginViewController_iPad.xib */; };
+		3E57713314AE534B000E5A6F /* CLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E57713114AE534B000E5A6F /* CLLoginViewController.m */; };
+		3E57717814AE5AD9000E5A6F /* CLInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E57717614AE5AD9000E5A6F /* CLInboxViewController.m */; };
+		3E57717914AE5AD9000E5A6F /* CLInboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E57717714AE5AD9000E5A6F /* CLInboxViewController.xib */; };
+		3E57717F14AE6804000E5A6F /* CLClassesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E57717E14AE6804000E5A6F /* CLClassesViewController.xib */; };
+		3E57718414AE688D000E5A6F /* CLClassesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E57718314AE688D000E5A6F /* CLClassesViewController.m */; };
+		3E57718614AE6D6F000E5A6F /* 96-book.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E57718514AE6D6E000E5A6F /* 96-book.png */; };
+		3E8AADBD14B76E4700679288 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AADBC14B76E4700679288 /* 37x-Checkmark.png */; };
+		3E8AADD414B7ED9600679288 /* CLReadBulletinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8AADD214B7ED9500679288 /* CLReadBulletinViewController.m */; };
+		3E8AADD514B7ED9600679288 /* CLReadBulletinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8AADD314B7ED9600679288 /* CLReadBulletinViewController.xib */; };
+		3EA4B66F14B101BE008F9D32 /* NSString+CLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4B66E14B101BD008F9D32 /* NSString+CLAdditions.m */; };
+		3EA4B67414B131A7008F9D32 /* CLURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4B67314B131A7008F9D32 /* CLURLRequest.m */; };
+		3EA4B68814B37E16008F9D32 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4B68714B37E16008F9D32 /* GTMNSString+HTML.m */; };
+		3EA4B68C14B3A3FF008F9D32 /* CLEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA4B68A14B3A3FE008F9D32 /* CLEmailViewController.m */; };
+		3EA4B68D14B3A3FF008F9D32 /* CLEmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA4B68B14B3A3FE008F9D32 /* CLEmailViewController.xib */; };
+		3EA5292F14B6133B00F3B7D9 /* 40-inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EA5292E14B6133A00F3B7D9 /* 40-inbox.png */; };
+		3EA5293214B6137100F3B7D9 /* 18-envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EA5293114B6137100F3B7D9 /* 18-envelope.png */; };
+		3EA5293414B6140800F3B7D9 /* 166-newspaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EA5293314B6140800F3B7D9 /* 166-newspaper.png */; };
+		3EA5293814B6146400F3B7D9 /* CLComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5293614B6146400F3B7D9 /* CLComposeViewController.m */; };
+		3EA5293914B6146400F3B7D9 /* CLComposeViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA5293714B6146400F3B7D9 /* CLComposeViewController_iPhone.xib */; };
+		3EA5293B14B617A100F3B7D9 /* CLComposeViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA5293A14B617A100F3B7D9 /* CLComposeViewController_iPad.xib */; };
+		3EA5293F14B61D4700F3B7D9 /* CLBulletinsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA5293D14B61D4700F3B7D9 /* CLBulletinsViewController.m */; };
+		3EA5294014B61D4700F3B7D9 /* CLBulletinsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA5293E14B61D4700F3B7D9 /* CLBulletinsViewController.xib */; };
+		3EA5294414B61F2300F3B7D9 /* CLBulletinsViewControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA5294314B61F2300F3B7D9 /* CLBulletinsViewControllerCell.xib */; };
+		3EB50CD114C75DD200283400 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB50CD014C75DD200283400 /* logo.png */; };
+		3EB5F1B014C49BA600CBFFDA /* CLInboxViewControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EB5F1AF14C49BA600CBFFDA /* CLInboxViewControllerCell.xib */; };
+		3EE38E4114BB9E590098C022 /* CLClassMembersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE38E4014BB9E590098C022 /* CLClassMembersViewController.m */; };
+		3EE38E4314BB9E780098C022 /* CLClassMembersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EE38E4214BB9E780098C022 /* CLClassMembersViewController.xib */; };
+		3EE38E4514BB9E880098C022 /* CLClassMembersViewControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EE38E4414BB9E880098C022 /* CLClassMembersViewControllerCell.xib */; };
+		3EF504A714BB786E00C3C025 /* IntelligentSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF504A614BB786D00C3C025 /* IntelligentSplitViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E1F36FD14B4C78B0014956D /* CLClassesViewControllerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLClassesViewControllerCell.xib; sourceTree = "<group>"; };
+		3E1F370414B54B9D0014956D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		3E1F370514B54B9D0014956D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		3E57710C14AE45EA000E5A6F /* myUsask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myUsask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E57711014AE45EA000E5A6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3E57711214AE45EA000E5A6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3E57711414AE45EA000E5A6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3E57711814AE45EA000E5A6F /* myUsask-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "myUsask-Info.plist"; sourceTree = "<group>"; };
+		3E57711A14AE45EA000E5A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3E57711C14AE45EA000E5A6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E57711E14AE45EA000E5A6F /* myUsask-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myUsask-Prefix.pch"; sourceTree = "<group>"; };
+		3E57711F14AE45EA000E5A6F /* CLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLAppDelegate.h; sourceTree = "<group>"; };
+		3E57712014AE45EA000E5A6F /* CLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLAppDelegate.m; sourceTree = "<group>"; };
+		3E57712214AE45EA000E5A6F /* CLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CLViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E57712314AE45EA000E5A6F /* CLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CLViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3E57712614AE45EA000E5A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CLLoginViewController_iPhone.xib; sourceTree = "<group>"; };
+		3E57712914AE45EB000E5A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CLLoginViewController_iPad.xib; sourceTree = "<group>"; };
+		3E57713014AE534B000E5A6F /* CLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CLLoginViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3E57713114AE534B000E5A6F /* CLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CLLoginViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3E57717514AE5AD9000E5A6F /* CLInboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLInboxViewController.h; sourceTree = "<group>"; };
+		3E57717614AE5AD9000E5A6F /* CLInboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLInboxViewController.m; sourceTree = "<group>"; };
+		3E57717714AE5AD9000E5A6F /* CLInboxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLInboxViewController.xib; sourceTree = "<group>"; };
+		3E57717E14AE6804000E5A6F /* CLClassesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLClassesViewController.xib; sourceTree = "<group>"; };
+		3E57718214AE6843000E5A6F /* CLClassesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLClassesViewController.h; sourceTree = "<group>"; };
+		3E57718314AE688D000E5A6F /* CLClassesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLClassesViewController.m; sourceTree = "<group>"; };
+		3E57718514AE6D6E000E5A6F /* 96-book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "96-book.png"; sourceTree = "<group>"; };
+		3E8AADBC14B76E4700679288 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
+		3E8AADD114B7ED9400679288 /* CLReadBulletinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLReadBulletinViewController.h; sourceTree = "<group>"; };
+		3E8AADD214B7ED9500679288 /* CLReadBulletinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLReadBulletinViewController.m; sourceTree = "<group>"; };
+		3E8AADD314B7ED9600679288 /* CLReadBulletinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLReadBulletinViewController.xib; sourceTree = "<group>"; };
+		3EA4B66D14B101BD008F9D32 /* NSString+CLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CLAdditions.h"; sourceTree = "<group>"; };
+		3EA4B66E14B101BD008F9D32 /* NSString+CLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CLAdditions.m"; sourceTree = "<group>"; };
+		3EA4B67214B131A7008F9D32 /* CLURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLURLRequest.h; sourceTree = "<group>"; };
+		3EA4B67314B131A7008F9D32 /* CLURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLURLRequest.m; sourceTree = "<group>"; };
+		3EA4B67614B14F38008F9D32 /* CLURLRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLURLRequestDelegate.h; sourceTree = "<group>"; };
+		3EA4B68614B37DED008F9D32 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		3EA4B68714B37E16008F9D32 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		3EA4B68914B3A3FD008F9D32 /* CLEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLEmailViewController.h; sourceTree = "<group>"; };
+		3EA4B68A14B3A3FE008F9D32 /* CLEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLEmailViewController.m; sourceTree = "<group>"; };
+		3EA4B68B14B3A3FE008F9D32 /* CLEmailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLEmailViewController.xib; sourceTree = "<group>"; };
+		3EA5292E14B6133A00F3B7D9 /* 40-inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-inbox.png"; sourceTree = "<group>"; };
+		3EA5293114B6137100F3B7D9 /* 18-envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18-envelope.png"; sourceTree = "<group>"; };
+		3EA5293314B6140800F3B7D9 /* 166-newspaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "166-newspaper.png"; sourceTree = "<group>"; };
+		3EA5293514B6146300F3B7D9 /* CLComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLComposeViewController.h; sourceTree = "<group>"; };
+		3EA5293614B6146400F3B7D9 /* CLComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLComposeViewController.m; sourceTree = "<group>"; };
+		3EA5293714B6146400F3B7D9 /* CLComposeViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLComposeViewController_iPhone.xib; sourceTree = "<group>"; };
+		3EA5293A14B617A100F3B7D9 /* CLComposeViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLComposeViewController_iPad.xib; sourceTree = "<group>"; };
+		3EA5293C14B61D4700F3B7D9 /* CLBulletinsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLBulletinsViewController.h; sourceTree = "<group>"; };
+		3EA5293D14B61D4700F3B7D9 /* CLBulletinsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLBulletinsViewController.m; sourceTree = "<group>"; };
+		3EA5293E14B61D4700F3B7D9 /* CLBulletinsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLBulletinsViewController.xib; sourceTree = "<group>"; };
+		3EA5294314B61F2300F3B7D9 /* CLBulletinsViewControllerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLBulletinsViewControllerCell.xib; sourceTree = "<group>"; };
+		3EB50CD014C75DD200283400 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		3EB5F1AF14C49BA600CBFFDA /* CLInboxViewControllerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLInboxViewControllerCell.xib; sourceTree = "<group>"; };
+		3EE38E4014BB9E590098C022 /* CLClassMembersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLClassMembersViewController.m; sourceTree = "<group>"; };
+		3EE38E4214BB9E780098C022 /* CLClassMembersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLClassMembersViewController.xib; sourceTree = "<group>"; };
+		3EE38E4414BB9E880098C022 /* CLClassMembersViewControllerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLClassMembersViewControllerCell.xib; sourceTree = "<group>"; };
+		3EE38E4614BB9EB50098C022 /* CLClassMembersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLClassMembersViewController.h; sourceTree = "<group>"; };
+		3EE38E4714BC9E100098C022 /* CLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLConstants.h; sourceTree = "<group>"; };
+		3EF504A514BB786C00C3C025 /* IntelligentSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntelligentSplitViewController.h; sourceTree = "<group>"; };
+		3EF504A614BB786D00C3C025 /* IntelligentSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntelligentSplitViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E57710914AE45EA000E5A6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E57711114AE45EA000E5A6F /* UIKit.framework in Frameworks */,
+				3E57711314AE45EA000E5A6F /* Foundation.framework in Frameworks */,
+				3E57711514AE45EA000E5A6F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E57710114AE45EA000E5A6F = {
+			isa = PBXGroup;
+			children = (
+				3EB50CD014C75DD200283400 /* logo.png */,
+				3E57711614AE45EA000E5A6F /* myUsask */,
+				3E57710F14AE45EA000E5A6F /* Frameworks */,
+				3E57710D14AE45EA000E5A6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E57710D14AE45EA000E5A6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E57710C14AE45EA000E5A6F /* myUsask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E57710F14AE45EA000E5A6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E57711014AE45EA000E5A6F /* UIKit.framework */,
+				3E57711214AE45EA000E5A6F /* Foundation.framework */,
+				3E57711414AE45EA000E5A6F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E57711614AE45EA000E5A6F /* myUsask */ = {
+			isa = PBXGroup;
+			children = (
+				3E57711F14AE45EA000E5A6F /* CLAppDelegate.h */,
+				3E57712014AE45EA000E5A6F /* CLAppDelegate.m */,
+				3EA5293C14B61D4700F3B7D9 /* CLBulletinsViewController.h */,
+				3EA5293D14B61D4700F3B7D9 /* CLBulletinsViewController.m */,
+				3EA5293E14B61D4700F3B7D9 /* CLBulletinsViewController.xib */,
+				3EA5294314B61F2300F3B7D9 /* CLBulletinsViewControllerCell.xib */,
+				3E57718214AE6843000E5A6F /* CLClassesViewController.h */,
+				3E57718314AE688D000E5A6F /* CLClassesViewController.m */,
+				3E57717E14AE6804000E5A6F /* CLClassesViewController.xib */,
+				3E1F36FD14B4C78B0014956D /* CLClassesViewControllerCell.xib */,
+				3EE38E4614BB9EB50098C022 /* CLClassMembersViewController.h */,
+				3EE38E4014BB9E590098C022 /* CLClassMembersViewController.m */,
+				3EE38E4214BB9E780098C022 /* CLClassMembersViewController.xib */,
+				3EE38E4414BB9E880098C022 /* CLClassMembersViewControllerCell.xib */,
+				3EA5293514B6146300F3B7D9 /* CLComposeViewController.h */,
+				3EA5293614B6146400F3B7D9 /* CLComposeViewController.m */,
+				3EA5293714B6146400F3B7D9 /* CLComposeViewController_iPhone.xib */,
+				3EA5293A14B617A100F3B7D9 /* CLComposeViewController_iPad.xib */,
+				3EE38E4714BC9E100098C022 /* CLConstants.h */,
+				3EA4B68914B3A3FD008F9D32 /* CLEmailViewController.h */,
+				3EA4B68A14B3A3FE008F9D32 /* CLEmailViewController.m */,
+				3EA4B68B14B3A3FE008F9D32 /* CLEmailViewController.xib */,
+				3E57717514AE5AD9000E5A6F /* CLInboxViewController.h */,
+				3E57717614AE5AD9000E5A6F /* CLInboxViewController.m */,
+				3E57717714AE5AD9000E5A6F /* CLInboxViewController.xib */,
+				3EB5F1AF14C49BA600CBFFDA /* CLInboxViewControllerCell.xib */,
+				3E57713014AE534B000E5A6F /* CLLoginViewController.h */,
+				3E57713114AE534B000E5A6F /* CLLoginViewController.m */,
+				3E57712514AE45EA000E5A6F /* CLLoginViewController_iPhone.xib */,
+				3E57712814AE45EB000E5A6F /* CLLoginViewController_iPad.xib */,
+				3E8AADD114B7ED9400679288 /* CLReadBulletinViewController.h */,
+				3E8AADD214B7ED9500679288 /* CLReadBulletinViewController.m */,
+				3E8AADD314B7ED9600679288 /* CLReadBulletinViewController.xib */,
+				3EA4B67214B131A7008F9D32 /* CLURLRequest.h */,
+				3EA4B67314B131A7008F9D32 /* CLURLRequest.m */,
+				3EA4B67614B14F38008F9D32 /* CLURLRequestDelegate.h */,
+				3E57712214AE45EA000E5A6F /* CLViewController.h */,
+				3E57712314AE45EA000E5A6F /* CLViewController.m */,
+				3EF504A514BB786C00C3C025 /* IntelligentSplitViewController.h */,
+				3EF504A614BB786D00C3C025 /* IntelligentSplitViewController.m */,
+				3E1F370414B54B9D0014956D /* MBProgressHUD.h */,
+				3E1F370514B54B9D0014956D /* MBProgressHUD.m */,
+				3EA4B67014B101C8008F9D32 /* Categories */,
+				3E57711714AE45EA000E5A6F /* Supporting Files */,
+			);
+			path = myUsask;
+			sourceTree = "<group>";
+		};
+		3E57711714AE45EA000E5A6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EA5293114B6137100F3B7D9 /* 18-envelope.png */,
+				3EA5292E14B6133A00F3B7D9 /* 40-inbox.png */,
+				3E57718514AE6D6E000E5A6F /* 96-book.png */,
+				3EA5293314B6140800F3B7D9 /* 166-newspaper.png */,
+				3E8AADBC14B76E4700679288 /* 37x-Checkmark.png */,
+				3E57711814AE45EA000E5A6F /* myUsask-Info.plist */,
+				3E57711914AE45EA000E5A6F /* InfoPlist.strings */,
+				3E57711C14AE45EA000E5A6F /* main.m */,
+				3E57711E14AE45EA000E5A6F /* myUsask-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EA4B67014B101C8008F9D32 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3EA4B68614B37DED008F9D32 /* GTMNSString+HTML.h */,
+				3EA4B68714B37E16008F9D32 /* GTMNSString+HTML.m */,
+				3EA4B66D14B101BD008F9D32 /* NSString+CLAdditions.h */,
+				3EA4B66E14B101BD008F9D32 /* NSString+CLAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E57710B14AE45EA000E5A6F /* myUsask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E57712D14AE45EB000E5A6F /* Build configuration list for PBXNativeTarget "myUsask" */;
+			buildPhases = (
+				3E57710814AE45EA000E5A6F /* Sources */,
+				3E57710914AE45EA000E5A6F /* Frameworks */,
+				3E57710A14AE45EA000E5A6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myUsask;
+			productName = myUsask;
+			productReference = 3E57710C14AE45EA000E5A6F /* myUsask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E57710314AE45EA000E5A6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 3E57710614AE45EA000E5A6F /* Build configuration list for PBXProject "myUsask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3E57710114AE45EA000E5A6F;
+			productRefGroup = 3E57710D14AE45EA000E5A6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E57710B14AE45EA000E5A6F /* myUsask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E57710A14AE45EA000E5A6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E57711B14AE45EA000E5A6F /* InfoPlist.strings in Resources */,
+				3E57712714AE45EA000E5A6F /* CLLoginViewController_iPhone.xib in Resources */,
+				3E57712A14AE45EB000E5A6F /* CLLoginViewController_iPad.xib in Resources */,
+				3E57717914AE5AD9000E5A6F /* CLInboxViewController.xib in Resources */,
+				3E57717F14AE6804000E5A6F /* CLClassesViewController.xib in Resources */,
+				3E57718614AE6D6F000E5A6F /* 96-book.png in Resources */,
+				3EA4B68D14B3A3FF008F9D32 /* CLEmailViewController.xib in Resources */,
+				3E1F36FE14B4C78B0014956D /* CLClassesViewControllerCell.xib in Resources */,
+				3EA5292F14B6133B00F3B7D9 /* 40-inbox.png in Resources */,
+				3EA5293214B6137100F3B7D9 /* 18-envelope.png in Resources */,
+				3EA5293414B6140800F3B7D9 /* 166-newspaper.png in Resources */,
+				3EA5293914B6146400F3B7D9 /* CLComposeViewController_iPhone.xib in Resources */,
+				3EA5293B14B617A100F3B7D9 /* CLComposeViewController_iPad.xib in Resources */,
+				3EA5294014B61D4700F3B7D9 /* CLBulletinsViewController.xib in Resources */,
+				3EA5294414B61F2300F3B7D9 /* CLBulletinsViewControllerCell.xib in Resources */,
+				3E8AADBD14B76E4700679288 /* 37x-Checkmark.png in Resources */,
+				3E8AADD514B7ED9600679288 /* CLReadBulletinViewController.xib in Resources */,
+				3EE38E4314BB9E780098C022 /* CLClassMembersViewController.xib in Resources */,
+				3EE38E4514BB9E880098C022 /* CLClassMembersViewControllerCell.xib in Resources */,
+				3EB5F1B014C49BA600CBFFDA /* CLInboxViewControllerCell.xib in Resources */,
+				3EB50CD114C75DD200283400 /* logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E57710814AE45EA000E5A6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E57711D14AE45EA000E5A6F /* main.m in Sources */,
+				3E57712114AE45EA000E5A6F /* CLAppDelegate.m in Sources */,
+				3E57712414AE45EA000E5A6F /* CLViewController.m in Sources */,
+				3E57713314AE534B000E5A6F /* CLLoginViewController.m in Sources */,
+				3E57717814AE5AD9000E5A6F /* CLInboxViewController.m in Sources */,
+				3E57718414AE688D000E5A6F /* CLClassesViewController.m in Sources */,
+				3EA4B66F14B101BE008F9D32 /* NSString+CLAdditions.m in Sources */,
+				3EA4B67414B131A7008F9D32 /* CLURLRequest.m in Sources */,
+				3EA4B68814B37E16008F9D32 /* GTMNSString+HTML.m in Sources */,
+				3EA4B68C14B3A3FF008F9D32 /* CLEmailViewController.m in Sources */,
+				3E1F370614B54B9D0014956D /* MBProgressHUD.m in Sources */,
+				3EA5293814B6146400F3B7D9 /* CLComposeViewController.m in Sources */,
+				3EA5293F14B61D4700F3B7D9 /* CLBulletinsViewController.m in Sources */,
+				3E8AADD414B7ED9600679288 /* CLReadBulletinViewController.m in Sources */,
+				3EF504A714BB786E00C3C025 /* IntelligentSplitViewController.m in Sources */,
+				3EE38E4114BB9E590098C022 /* CLClassMembersViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3E57711914AE45EA000E5A6F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E57711A14AE45EA000E5A6F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3E57712514AE45EA000E5A6F /* CLLoginViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E57712614AE45EA000E5A6F /* en */,
+			);
+			name = CLLoginViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		3E57712814AE45EB000E5A6F /* CLLoginViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E57712914AE45EB000E5A6F /* en */,
+			);
+			name = CLLoginViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E57712B14AE45EB000E5A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E57712C14AE45EB000E5A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E57712E14AE45EB000E5A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myUsask/myUsask-Prefix.pch";
+				INFOPLIST_FILE = "myUsask/myUsask-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3E57712F14AE45EB000E5A6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myUsask/myUsask-Prefix.pch";
+				INFOPLIST_FILE = "myUsask/myUsask-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E57710614AE45EA000E5A6F /* Build configuration list for PBXProject "myUsask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E57712B14AE45EB000E5A6F /* Debug */,
+				3E57712C14AE45EB000E5A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E57712D14AE45EB000E5A6F /* Build configuration list for PBXNativeTarget "myUsask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E57712E14AE45EB000E5A6F /* Debug */,
+				3E57712F14AE45EB000E5A6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E57710314AE45EA000E5A6F /* Project object */;
+}
