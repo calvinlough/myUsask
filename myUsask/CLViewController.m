@@ -184,14 +184,14 @@ enum {
 }
 
 - (void)doLoginWithNSID:(NSString *)aNSID password:(NSString *)aPassword {
+	self.loadingHUD = [[MBProgressHUD alloc] initWithView:self.view];
+	self.loadingHUD.labelText = @"Loading";
+	[self.view addSubview:loadingHUD];
+	[self.loadingHUD show:YES];
+	
 	if (CL_FAKE_NETWORK_DATA == 0) {
 		self.NSID = aNSID;
 		self.password = aPassword;
-		
-		self.loadingHUD = [[MBProgressHUD alloc] initWithView:self.view];
-		self.loadingHUD.labelText = @"Loading";
-		[self.view addSubview:loadingHUD];
-		[self.loadingHUD show:YES];
 		
 		CLURLRequest *URLRequest = [[CLURLRequest alloc] init];
 		[URLRequest setUrlString:@"https://paws.usask.ca/cp/home/displaylogin"];
@@ -206,11 +206,15 @@ enum {
 		NSMutableArray *bulletinsData = [NSMutableArray array];
 		NSDictionary *bulletin;
 		
-		bulletin = [NSDictionary dictionaryWithObjectsAndKeys:@"Students: need help on an assignment?", @"title", @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", @"body", nil];
+		bulletin = [NSDictionary dictionaryWithObjectsAndKeys:@"Build Your Communication Talent: Toastmasters", @"title", @"Build your Communication Talent:  Summer Fun with Public Speaking<br /><br />Campus Howlers Toastmasters Club<br /><br />May Open House,  Guests Welcome.<br /><br />Coffee and Breakfast Treats Provided.<br /><br />Come and check out a great place for you to develop your communication and leadership skills. Campus Howlers Toastmasters Club welcomes all guests to their upcoming Open House. Toastmasters International is a world leader in communication and leadership development. Members have many opportunities to practice public speaking, work on skills valuable for that next interview, and learn valuable leadership tools. A Toastmasters meeting is a learn-by-doing workshop with a no-pressure atmosphere. Invest in your future: check out a meeting near you. Campus Howlers Toastmasters has an Open House meeting, specially geared to show our guests how a Toastmasters Club can help.<br /><br />Wednesday May 1, 2013<br /><br />7:15 AM – 8:15 AM         Room 2D21 College of Agriculture<br /><br />For more information, contact:<br />campushowlers.toastmastersclubs.org/<br />or<br />contact-7536@toastmastersclubs.org", @"body", nil];
 		[bulletinsData addObject:bulletin];
-		bulletin = [NSDictionary dictionaryWithObjectsAndKeys:@"Lynda.com kiosks", @"title", @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", @"body", nil];
+		bulletin = [NSDictionary dictionaryWithObjectsAndKeys:@"Public Lecture", @"title", @"Dr. Julie Gibbings (University of Manitoba) is giving a public lecture at the Frances Morrison Library on Thursday April 25th at 6pm. The lecture is entitled \"The Work That History Does: Race, Labour, and Postcolonial Nationalism in Guatemala, 1860-1930. After the lecture, Dr. Gibbings will be joined by five university students to discuss the more general issue of access to history in terms of sources, teaching, and writing style. Questions from the audience will be welcome.", @"body", nil];
 		[bulletinsData addObject:bulletin];
-		bulletin = [NSDictionary dictionaryWithObjectsAndKeys:@"2012 conference", @"title", @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", @"body", nil];
+		bulletin = [NSDictionary dictionaryWithObjectsAndKeys:@"English Grad Banquet! Buy Tickets Soon!", @"title", @"Greetings, the EUS is proud to host the first annual year-end banquet during the evening of May 24th at Marquis Hall. We'll be offering a buffet style dinner, with a small program to compliment the evening's festivities.", @"body", nil];
+		[bulletinsData addObject:bulletin];
+		bulletin = [NSDictionary dictionaryWithObjectsAndKeys:@"P.G. Sorenson Distinguished Graduate Lecture", @"title", @"The field of educational assessment benefits from contributions in several domains including: cognitive science, measurement science, computer science, and instructional science. Dr. Zapata-Rivera will describe how his early research at the ARIES lab has informed his work on designing, implementing, and evaluating new generation assessments over the past ten years.", @"body", nil];
+		[bulletinsData addObject:bulletin];
+		bulletin = [NSDictionary dictionaryWithObjectsAndKeys:@"Seeking Women Aged 18 – 30", @"title", @"To participate in a research study that will assist in the development of a testing procedure that may help improve the treatment of women with stress urinary incontinence.", @"body", nil];
 		[bulletinsData addObject:bulletin];
 		
 		[bulletinsViewController setBulletinsData:bulletinsData];
@@ -219,11 +223,19 @@ enum {
 		NSMutableArray *inboxData = [NSMutableArray array];
 		NSDictionary *msg;
 		
-		msg = [NSDictionary dictionaryWithObjectsAndKeys:@"1", @"msgId", @"John Smith", @"from", @"testing", @"subject", @"01/18/12 09:54 AM", @"date", nil];
+		msg = [NSDictionary dictionaryWithObjectsAndKeys:@"1", @"msgId", @"Esther Petty", @"from", @"Class tomorrow", @"subject", @"04/23/13 02:36 PM", @"date", nil];
 		[inboxData addObject:msg];
-		msg = [NSDictionary dictionaryWithObjectsAndKeys:@"2", @"msgId", @"Jane Smith", @"from", @"testing2", @"subject", @"01/17/12 01:52 PM", @"date", nil];
+		msg = [NSDictionary dictionaryWithObjectsAndKeys:@"2", @"msgId", @"Brittany McCarley", @"from", @"Assignment #3", @"subject", @"04/23/13 11:02 AM", @"date", nil];
 		[inboxData addObject:msg];
-		msg = [NSDictionary dictionaryWithObjectsAndKeys:@"3", @"msgId", @"Tyler Smith", @"from", @"testing3", @"subject", @"09/01/09 01:51 PM", @"date", nil];
+		msg = [NSDictionary dictionaryWithObjectsAndKeys:@"3", @"msgId", @"Thomas Finley", @"from", @"Re: Lunch friday?", @"subject", @"04/22/13 11:51 PM", @"date", nil];
+		[inboxData addObject:msg];
+		msg = [NSDictionary dictionaryWithObjectsAndKeys:@"4", @"msgId", @"Daniel Dunlap", @"from", @"Hey", @"subject", @"04/22/13 01:19 PM", @"date", nil];
+		[inboxData addObject:msg];
+		msg = [NSDictionary dictionaryWithObjectsAndKeys:@"5", @"msgId", @"Scott Koury", @"from", @"(no subject)", @"subject", @"04/21/13 01:19 PM", @"date", nil];
+		[inboxData addObject:msg];
+		msg = [NSDictionary dictionaryWithObjectsAndKeys:@"6", @"msgId", @"Thomas Finley", @"from", @"Lunch friday?", @"subject", @"04/20/13 01:19 PM", @"date", nil];
+		[inboxData addObject:msg];
+		msg = [NSDictionary dictionaryWithObjectsAndKeys:@"7", @"msgId", @"Williams McGhie", @"from", @"Finals", @"subject", @"04/18/13 01:19 PM", @"date", nil];
 		[inboxData addObject:msg];
 		
 		[inboxViewController setInboxData:inboxData];
@@ -232,21 +244,24 @@ enum {
 		NSMutableArray *classesData = [NSMutableArray array];
 		NSDictionary *class;
 		
-		class = [NSDictionary dictionaryWithObjectsAndKeys:@"1", @"courseId", @"Physics", @"name", @"PHYS 101", @"courseNumber", nil];
+		class = [NSDictionary dictionaryWithObjectsAndKeys:@"1", @"courseId", @"Physics and the Universe", @"name", @"PHYS 115.3", @"courseNumber", nil];
 		[classesData addObject:class];
-		class = [NSDictionary dictionaryWithObjectsAndKeys:@"2", @"courseId", @"Chemistry", @"name", @"CHEM 101", @"courseNumber", nil];
+		class = [NSDictionary dictionaryWithObjectsAndKeys:@"2", @"courseId", @"General Chemistry I", @"name", @"CHEM 112.3", @"courseNumber", nil];
 		[classesData addObject:class];
-		class = [NSDictionary dictionaryWithObjectsAndKeys:@"3", @"courseId", @"Math", @"name", @"MATH 101", @"courseNumber", nil];
+		class = [NSDictionary dictionaryWithObjectsAndKeys:@"3", @"courseId", @"Calculus I", @"name", @"MATH 110.3", @"courseNumber", nil];
+		[classesData addObject:class];
+		class = [NSDictionary dictionaryWithObjectsAndKeys:@"4", @"courseId", @"Introduction to Computer Science and Programming", @"name", @"CMPT 111.3", @"courseNumber", nil];
+		[classesData addObject:class];
+		class = [NSDictionary dictionaryWithObjectsAndKeys:@"5", @"courseId", @"Literature and Composition", @"name", @"ENG 110.6", @"courseNumber", nil];
+		[classesData addObject:class];
+		class = [NSDictionary dictionaryWithObjectsAndKeys:@"6", @"courseId", @"Introduction to Philosophy", @"name", @"PHIL 110.6", @"courseNumber", nil];
+		[classesData addObject:class];
+		class = [NSDictionary dictionaryWithObjectsAndKeys:@"7", @"courseId", @"The Nature of Life", @"name", @"BIOL 120.3", @"courseNumber", nil];
 		[classesData addObject:class];
 		
 		[classesViewController setClassesData:classesData];
 		
-		[UIView beginAnimations:nil context:nil]; 
-		[UIView setAnimationDuration:1.0]; 
-		[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:NO];
-		[self.view addSubview:self.tabBarController.view]; 
-		[self.loginNavigationController.view removeFromSuperview];
-		[UIView commitAnimations];
+		[self performSelector:@selector(transitionFinishedLoading) withObject:nil afterDelay:5.0];
 	}
 }
 
@@ -372,13 +387,17 @@ enum {
 	
 	[classesViewController setClassesData:classesData];
 	
+	[self transitionFinishedLoading];
+}
+
+- (void)transitionFinishedLoading {
 	[self.loadingHUD hide:YES];
 	self.loadingHUD = nil;
 	
-	[UIView beginAnimations:nil context:nil]; 
-	[UIView setAnimationDuration:1.0]; 
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationDuration:1.0];
 	[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:NO];
-	[self.view addSubview:self.tabBarController.view]; 
+	[self.view addSubview:self.tabBarController.view];
 	[self.loginNavigationController.view removeFromSuperview];
 	[UIView commitAnimations];
 }

@@ -52,7 +52,7 @@
 	
 	if (postData != nil) {
 		[fetchUrlRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-		[fetchUrlRequest setValue:[NSString stringWithFormat:@"%qi", [postData length]] forHTTPHeaderField:@"Content-Length"];
+		[fetchUrlRequest setValue:[NSString stringWithFormat:@"%li", (unsigned long)[postData length]] forHTTPHeaderField:@"Content-Length"];
 		[fetchUrlRequest setHTTPMethod:@"POST"];
 		[fetchUrlRequest setHTTPBody:postData];
 	} else {

@@ -1,4 +1,4 @@
 
 #ifndef CL_FAKE_NETWORK_DATA
-#define CL_FAKE_NETWORK_DATA 0
+#define CL_FAKE_NETWORK_DATA 1
 #endif

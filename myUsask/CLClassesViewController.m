@@ -84,11 +84,27 @@ enum {
 		NSMutableArray *membersData = [NSMutableArray array];
 		NSDictionary *member;
 		
-		member = [NSDictionary dictionaryWithObjectsAndKeys:@"abc123", @"nsid", @"Smith, John", @"name", nil];
+		member = [NSDictionary dictionaryWithObjectsAndKeys:@"abc123", @"nsid", @"Irwin, Joseph", @"name", nil];
 		[membersData addObject:member];
-		member = [NSDictionary dictionaryWithObjectsAndKeys:@"abc123", @"nsid", @"Smith, Jane", @"name", nil];
+		member = [NSDictionary dictionaryWithObjectsAndKeys:@"abc123", @"nsid", @"Griffin, Robert", @"name", nil];
 		[membersData addObject:member];
-		member = [NSDictionary dictionaryWithObjectsAndKeys:@"abc123", @"nsid", @"Smith, Mike", @"name", nil];
+		member = [NSDictionary dictionaryWithObjectsAndKeys:@"abc123", @"nsid", @"Crawford, Carol", @"name", nil];
+		[membersData addObject:member];
+		member = [NSDictionary dictionaryWithObjectsAndKeys:@"abc123", @"nsid", @"Westbrook, Anjanette", @"name", nil];
+		[membersData addObject:member];
+		member = [NSDictionary dictionaryWithObjectsAndKeys:@"abc123", @"nsid", @"Rodgers, Craig", @"name", nil];
+		[membersData addObject:member];
+		member = [NSDictionary dictionaryWithObjectsAndKeys:@"abc123", @"nsid", @"Cole, Pearl", @"name", nil];
+		[membersData addObject:member];
+		member = [NSDictionary dictionaryWithObjectsAndKeys:@"abc123", @"nsid", @"Torres, Jenette", @"name", nil];
+		[membersData addObject:member];
+		member = [NSDictionary dictionaryWithObjectsAndKeys:@"abc123", @"nsid", @"Beach, Wilson", @"name", nil];
+		[membersData addObject:member];
+		member = [NSDictionary dictionaryWithObjectsAndKeys:@"abc123", @"nsid", @"Hoag, Elizabeth", @"name", nil];
+		[membersData addObject:member];
+		member = [NSDictionary dictionaryWithObjectsAndKeys:@"abc123", @"nsid", @"McKay, Larry", @"name", nil];
+		[membersData addObject:member];
+		member = [NSDictionary dictionaryWithObjectsAndKeys:@"abc123", @"nsid", @"Wilson, Michael", @"name", nil];
 		[membersData addObject:member];
 		
 		if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {

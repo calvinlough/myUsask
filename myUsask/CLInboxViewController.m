@@ -78,7 +78,7 @@
 		self.activeURLRequest = URLRequest;
 	} else {
 		NSMutableDictionary *clickedMessage = [NSMutableDictionary dictionaryWithDictionary:[self.inboxData objectAtIndex:clickedRow]];
-		[clickedMessage setValue:@"Lorem ipsum <a href=\"http://google.com/\">dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." forKey:@"body"];
+		[clickedMessage setValue:@"Hey, just wondering if you are interested in grabbing lunch on Friday? There is that new sushi place downtown that I want to check out. I forget what it's called, but it's right across the street from Hudson's." forKey:@"body"];
 		[clickedMessage setValue:[clickedMessage valueForKey:@"from"] forKey:@"fullFrom"];
 		[clickedMessage setValue:[clickedMessage valueForKey:@"subject"] forKey:@"fullSubject"];
 		
