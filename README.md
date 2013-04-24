@@ -14,37 +14,29 @@ To run the project, you will need to have a recent version of Xcode installed.
 ## Screenshots
 
 <a href="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot1.png" target="_blank">
-  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot1.png" width="285" align="left">
+  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot1.png" width="283" align="left">
 </a>
-
 <a href="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot2.png" target="_blank">
-  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot2.png" width="285" align="left">
+  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot2.png" width="283" align="left">
 </a>
-
 <a href="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot3.png" target="_blank">
-  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot3.png" width="285" align="left">
+  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot3.png" width="283" align="left">
 </a>
-
 <a href="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot4.png" target="_blank">
-  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot4.png" width="285" align="left">
+  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot4.png" width="283" align="left">
 </a>
-
 <a href="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot5.png" target="_blank">
-  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot5.png" width="285" align="left">
+  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot5.png" width="283" align="left">
 </a>
-
 <a href="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot6.png" target="_blank">
-  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot6.png" width="285" align="left">
+  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot6.png" width="283" align="left">
 </a>
-
 <a href="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot7.png" target="_blank">
-  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot7.png" width="285" align="left">
+  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot7.png" width="283" align="left">
 </a>
-
 <a href="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot8.png" target="_blank">
-  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot8.png" width="285" align="left">
+  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot8.png" width="283" align="left">
 </a>
-
 <a href="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot9.png" target="_blank">
-  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot9.png" width="285" align="left">
+  <img src="https://github.com/calvinlough/myUsask/raw/master/screenshots/screenshot9.png" width="283" align="left">
 </a>
